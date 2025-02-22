@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Pagos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/Diseño sin título.png" alt="Logo" class="logo-img"> <span>GOV.CO</span>
+        </div>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="content">
+
+            <div class="municipio-info">
+                <img src="assets/Diseño sin título (1).png" alt="Escudos" class="escudos">
+                <img src="assets/LOGO ALC 2024.png" alt="Escudos" class="escudos">
+                <h2>Alcaldía municipal de <strong>Puerto Boyacá</strong>, Boyacá</h2>
+        <h2 id="titulo-detalle" class="titulo-detalle">Detalles e informes de pagos</h2>
+
+
+        <!-- Tabla de Pagos -->
+        <div class="table-container">
+            <table id="tabla-pagos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cédula de Ciudadanía</th>
+                        <th>Concepto</th>
+                        <th>Monto</th>
+                        <th>Fecha de Aporte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>12345678</td>
+                        <td>Impuesto Predial</td>
+                        <td>$500.000</td>
+                        <td>15/02/2024</td>
+                    </tr>
+                    <tr>
+                        <td>María Gómez</td>
+                        <td>87654321</td>
+                        <td>Impuesto Vehicular</td>
+                        <td>$700.000</td>
+                        <td>20/02/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Ramírez</td>
+                        <td>11223344</td>
+                        <td>Multa de Tránsito</td>
+                        <td>$250.000</td>
+                        <td>05/02/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       <!-- Botón Generar Informe -->
+       <div class="boton-container">
+        <button id="generar-informe" class="btn">Generar Informe</button>
+    </div>
+
+    <!-- Banner de Confirmación -->
+    <div id="banner-informe" class="banner">
+        <h3>Informe generado</h3>
+        <p>PagosTotales.PDF</p>
+        <p>¿Quieres descargarlo?</p>
+        <button id="descargar-informe" class="btn">Descargar PDF</button>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

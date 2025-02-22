@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipio</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/Diseño sin título.png" alt="Logo" class="logo-img">
+        </div>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+        <div class="municipio-info">
+            <img src="assets/Diseño sin título (1).png" alt="Escudos" class="escudos">
+            <img src="assets/LOGO ALC 2024.png" alt="Escudos" class="escudos">
+            <h2>Alcaldía municipal de <strong>Puerto Boyacá</strong>, Boyacá</h2>
+            <p>Aquí va la primera vista que se ve en esencia lo que tiene en inicio cada municipio</p>
+        </div>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <ul>
+            <li><a href="tramites.html"><img src="assets/card-in-use.png" alt="Icono"> Trámites y Servicios</a></li>
+            <li><a href="#" onclick="verMisTramites()"><img src="assets/Diseño sin título (5).png" alt="Icono"> Mis trámites</a></li>
+            <li><a href="#" onclick="verDetallesInformes()"><img src="assets/Diseño sin título (2).png" alt="Icono"> Detalles e informes</a></li>
+            <li><a href="#" onclick="verPQRDS()"><img src="assets/Diseño sin título (4).png" alt="Icono"> PQRDS</a></li>
+        </ul>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
